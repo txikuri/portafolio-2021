@@ -1,31 +1,152 @@
-body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+/* Tipografía */
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:400'); */
+
+/* Variables */
+:root {
+  --primario: #38e925;
+  --primario-claro: #a2f598;
+  --primario-fuerte: #279e19;
+  --secundario: #161917;
+  --secundario-claro: #b2b3b2;
+  --secundario-fuerte: #000000;
+  --bg: #ffffff;
+  --font-family: "'Helvetica Neue' sans-serif'";
+  --font-size: 17px;
+  --h1: 96px;
+  --h2: 67px;
+  --h3: 48px;
+  --h4: 33px;
+  --h5: 24px;
+  --h6: 17px;
 }
+
+/* Base */
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: 700;
 }
 
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6 {
+  font-size: var(--h6);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Componentes */
 .header {
   display: flex;
-  max-width: 100vw;
+  justify-content: space-between;
 }
 
-.header > * {
-  flex: 1;
+.logo {
+  max-width: 35%;
 }
 
-.header img {
-  max-width: 50%;
+.logo:hover {
+  fill: blue;
 }
 
-.header .nav {
+.nav ul li {
+  list-style: none;
+}
+
+.introduccion {
   display: grid;
-  justify-items: end;
+  grid-template-columns: 1fr 1fr;
+}
+
+.imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contacto ul li {
+  list-style: none;
+}
+
+/* Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-items: center;
   align-items: center;
-  padding-right: 20px;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-center {
+  place-content: center;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.outline {
+  outline: 2px solid black;
 }
