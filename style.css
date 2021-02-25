@@ -78,13 +78,22 @@ a {
   fill: blue;
 }
 
-.nav ul li {
+/* .nav ul li { // Sustituimos esto poniendo role="list" al elemento ul
   list-style: none;
-}
+} */
 
 .introduccion {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+/* Cambiamos la estructura del HTML en lugar de poner break tags duplicados & mejoramos la semántica del documento */
+.introduccion div p:first-of-type {
+  background-color: lightskyblue; /* Temp style */
+  margin-bottom: 2rem;
+}
+.introduccion div p:last-of-type {
+  border: 1px solid black; /* Temp style */
 }
 
 .imagenes {
@@ -92,9 +101,9 @@ a {
   grid-template-columns: 1fr 1fr;
 }
 
-.contacto ul li {
+/* .contacto ul li { // lo mismo que el nav
   list-style: none;
-}
+} */
 
 /* Utilities */
 .flex {

@@ -32,7 +32,8 @@
         </g>
       </svg>
       <nav class="nav">
-        <ul>
+        <!-- ponemos atributo role list para indicar que es una lista -->
+        <ul role="list">
           <li><a href="">ILUSTRACION</a></li>
           <li><a href="">DISEÑO</a></li>
           <li><a href="">CONTACTO</a></li>
@@ -41,8 +42,9 @@
     </header>
 
     <div class="introduccion">
+      <!-- atributos de las imágenes src(de donde jalamos la imagen), alt(texto alternativo que ayuda a describir de que trata la imagen útil para cuando la imagen no se carga), width(ancho de la imagen), height(alto de la imagen), loading(optimizacion para indicar como cargar la imagen, el valor ideal es lazy que indica que cargue el documento lo más pronto posible y al final las imágenes) -->
       <img src="" alt="" class="retrato" />
-      <p class="descripcion">
+      <!-- <p class="descripcion">
         Iker Aguirre Gutiérrez, también conocido como Txikuri, es un ilustrador
         y diseñador gráfico de la Ciudad de México actualmente estudiando en la
         universidad CENTRO de Diseño, Cine y Televisión. Su trabajo está
@@ -51,7 +53,21 @@
         <br />
         Ha trabajado con Sagi Haviv de Chermayeff Geismar & Haviv, Kris Goyri y
         ha diseñado productos para el grupo comédico Supermega.
-      </p>
+      </p> -->
+      <!-- modificamos la estructura para mejorar semántica del documento -->
+      <div>
+        <p>
+          Iker Aguirre Gutiérrez, también conocido como Txikuri, es un
+          ilustrador y diseñador gráfico de la Ciudad de México actualmente
+          estudiando en la universidad CENTRO de Diseño, Cine y Televisión. Su
+          trabajo está inspirado por la música, los videojuegos, el cine y las
+          artes plásticas.
+        </p>
+        <p>
+          Ha trabajado con Sagi Haviv de Chermayeff Geismar & Haviv, Kris Goyri
+          y ha diseñado productos para el grupo comédico Supermega.
+        </p>
+      </div>
     </div>
 
     <section class="ilustracion">
@@ -93,7 +109,8 @@
     <footer class="contacto">
       <h2 class="contacto">CONTACTO</h2>
 
-      <ul>
+      <!-- ponemos atributo role list para indicar que es una lista -->
+      <ul role="list">
         <li><a href="#" class="mail">TXIKURIART@GMAIL.COM</a></li>
         <li><a href="twitter.com/eltxikuri" class="twitter">TWITTER</a></li>
         <li><a href="instagram.com/txikuri" class="instagram">INSTAGRAM</a></li>
